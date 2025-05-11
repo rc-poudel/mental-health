@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "0.1.0",
       "build_uid" : "b8f24ee4-ad3e-4ffb-800e-a5289af8f003",
-      "MD5-CAM-1.0.1" : "da1c217ffa3603ddcd475207641d6ef2",
+      "MD5-CAM-1.0.1" : "cdbf37e63a1c3fc98d5313478baaeb77",
       "PARENT:MD5-CAM-1.0.1" : "E51B66549F2C04336B514E1DAE9B93C8"
     },
     "details" : {
@@ -423,7 +423,86 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "8F5F414D89192FFF36DB35A41CBCB740"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung des Grundes bzw. der Gründe für die Initierung jeglicher Art von Begegnung oder Kontakt zwischen einem Gesundheitsdienstleister und der betreuten Person.",
+          "keywords" : [ "Vorstellung", "vorgestellte Krankheit", "Beschwerde", "Grund", "Begegnung", "Kontakt", "Grund für die Begegnung", "Grund für den Kontakt", "Visite", "Grund der Visite" ],
+          "use" : "Zur Darstellung des Grundes oder der Gründe für die Initierung jeglicher Art von Begegnungen oder Kontakten zwischen einem Gesundheitsdienstleister und der betreuten Person aufzuzeichnen. Der Grund kann ein klinischer, sozialer oder administrativer Zwecke sein.\r\n\r\n\"Grund der Begegnung\" ist eine in der klinischen Medizin gebräuchliche Formulierung. Der Begriff wird jedoch häufig auf zwei Arten verwendet - eine bezieht sich auf eine Verwaltungskategorie für die Gesundheitsversorgung und die andere spiegelt klinische oder soziale Probleme wieder, die Menschen motivieren die Gesundheitsversorgung aufzusuchen.\r\n\r\nUm die Phrasen und die Absicht zu verdeutlichen, enthält dieser Archetyp zwei Datenelemente:\r\n- Der erste Datenelement \"Kontakttyp\", um den administrativen Typ gewünschten oder erforderlichen Gesundheitsversorgung einzuteilen - zum Beispiel die Art des Besuchs wie Notfall, präoperative Einschätzung, routinemäßige vorgeburtliche Visite oder Wahlleistung. Dieses Datenelement spiegelt die administrative Kategorie der Versorgung wider. Die Verwendung des Ausdrucks \"Kontaktart\" anstelle von \"Grund der Begegnung\" oder \"Grund des Besuchs\" spiegelt den zunehmenden Trend zu alternativen Methoden der Gesundheitsversorgung wider, die möglicherweise nicht zu einem persönlichen Kontakt zwischen dem Leistungserbringer und dem Patienten innerhalb eines Behandlungszimmers führen.\r\n- Die zweite Datenelement \"Vorstellung einer Beschwerde\", um die klinischen Gründe für den Kontakt im Gesundheitswesen zu dokumentieren. \"Hauptbeschwerde\" gilt als Synonym für \"Vorstellung einer Beschwerde\". Diese sind hauptsächlich dazu bestimmt, die wahrgenommenen Probleme oder Symptome des Patienten zu erfassen, die dazu geführt haben, dass sie Gesundheitsberatung suchen. Beispiele für Probleme oder Symptome sind: \"Wunsch nach Raucherentwöhnung\", wie Stress, Kurzatmigkeit, genetische Beratung oder Bauchschmerzen. Zeichen wie ein gestörter Bewusstseinszustand können hier ebenfalls erfasst werden, beispielsweise durch paramedizinisches Personal im Falle eines bewusstlosen Patienten.",
+          "misuse" : "Nicht zur Darstellung bestimmter Details der Geschichte des Patienten oder der Geschichte der Symptome aufzuzeichnen. Verwenden Sie hierzu den Archetype OBSERVATION.story, um die Erzählung und die zugehörigen geschachtelten CLUSTER-Archetypen für strukturierten Inhalt zu erfassen, z.B. CLUSTER.symptom, CLUSTER.event und CLUSTER.issue.\r\n\r\nNicht zur Darstellung bestimmter Diagnosedetails, die zusätzlich zu einem Grund für die Begegnung erforderlich sein können, verwendet werden. Zum Beispiel um eine präoperative Diagnose im Rahmen einer stationären Aufnahme zu erfassen. Verwenden Sie den Archetyp EVALUATION.problem_diagnosis für diesen Zweck.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere årsak eller årsaker til kontakten mellom helsepersonell og individ.",
+          "keywords" : [ "kontaktårsak", "årsak", "besøk", "årsak for besøk", "problemstilling", "konsultasjonsårsak", "innleggelsesårsak", "henvisningsgrunn", "henvisningsårsak", "henvendelse" ],
+          "use" : "For å registrere årsak eller årsaker til kontakten mellom helsepersonell og individ. Årsak kan være klinisk, sosial eller administrativ.\r\n\r\nKontaktårsak er et vanlig uttrykk som brukes i klinisk medisin, begrepet brukes oftest på to måter - en som refererer til en administrativ kategori for levering av helsetjenester og en som gjenspeiler det kliniske eller sosiale behovet for å søke helsetjenester. \r\n\r\nArketypen inneholder to dataelementer:\r\n\r\n- \"Administrativ kontaktårsak\" brukes for å dokumentere den administrative delen av helsehjelpen som oppsøkes eller behøves, for eksempel konsultasjonstype, øyeblikkelig hjelp, preoperativ vurdering, svangerskapskontroll eller elektiv innleggelse. Dataelementet reflekterer en administrativ kategorisering av helsehjelpen. Valg av ordet kontaktårsak viser at det er en økt trend mot alternative måter for utføring av helsetjenester som ikke må ende opp med ansikt til ansikt kontakt mellom helsepersonell og pasient i konsultasjonsrommet.\r\n\r\n-\"Klinisk kontaktårsak\" brukes for å dokumentere kliniske årsaker for kontakten. Hovedproblemstilling blir regnet som et synonym for \"Klinisk kontaktårsak\". Formålet er å registrere individets oppfatning av problemer og symptomer som har vært utløsende faktor for at en søker hjelp fra helsevesenet, for eksempel ønske om å slutte å røyke, stress, kortpusthet eller magesmerter. Sykdomstegn som \"nedsatt bevissthet\" kan også registreres her, for eksempel når prehospitalt personell møter en bevisstløs person.",
+          "misuse" : "Skal ikke benyttes for å registrere spesifikke detaljer om pasientens sykehistorie eller forløp av symptomer. Bruk OBSERVATION.story å registrere den fritekstlige delen og de relaterte nøstede CLUSTER-arketypene for strukturert innhold f.eks CLUSTER.symptom, CLUSTER.event og CLUSTER.issue. \r\n\r\nSkal ikke benyttes for å registrere bestemte detaljer om diagnoser som kan være nødvendig i tillegg til \"Kontaktårsak\" f.eks innleggelse eller preoperativ diagnose som en del av en innleggelse i sykehus for utførelse av en prosedyre. Bruk EVALUATION.problem_diagnosis for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar a(s) razão(ões) do início de qualquer tipo de contato de saúde entre um profissional de saúde e um paciente. \r\n",
+          "keywords" : [ "apresentação", "queixa apresentada", "motivo para o encontro", "motivo", "queixa principal", "visita", "motivo para a visita" ],
+          "use" : "Para gravar a(s) razão(ões) do início de qualquer tipo de contato de saúde entre um profissional de saúde e um paciente. \r\n\r\nMotivo para o encontro é um frase comum em medicina clínica, entretanto o termo é frequentemente usado de duas maneiras comuns - Uma refere-se à categoria administrativa para provisão de cuidado em saúde e a outra que reflete o gatilho clínico para buscar cuidado em saúde. \r\n\r\nNum esforço para esclarecer as frases e intenções, este arquétipo contém dois elementos de dados:\r\n- O primeiro, \"Motivo para o contato\", para documentar o tipo administrativo de cuidado em saúde procurado ou exigido - por exemplo o tipo de consulta, cuidado emergencial, risco cirúrgico, visita pré-natal de rotina ou adminissão eletiva. Este elemento de dado reflete a categoria administrativa da provisão do cuidado. O uso da frase \"Motivo para o contato\" ao invés de \"Razão para o encontro\" ou \"Razão para visita\" reflete uma tendência crescente em relação a métodos alternativos de provisão de cuidado em saúde que podem não resultar em um contato pessoal entre o profissional de saúde e o paciente dentro de um consultório.\r\n- O segundo, \"Problema apresentado\", para documentar as razões clínicas do contato em saúde. O objetivo destes é principalmente para capturar os problemas ou sintomas observados pelo paciente que o levaram a procurar orientação em saúde, como o desejo de parar de fumar, estresse, falta de ar ou dor abdominal. Sinais como estado de consciência alterado também podem ser capturados aqui, por exemplo por paramédicos com pacientes inconscientes.\r\n",
+          "misuse" : "Não deve ser usado para gravar detalhes específicos e da estória do paciente ou seus sintomas. Use OBSERVATION.story para capturar a narrativa e arquétipos CLUSTER relacionados para conteúdo estruturado p.e. CLUSTER.symptom, CLUSTER.event and CLUSTER.issue.\r\n\r\nNão deve ser usado para gravar detalhes específicos de diagnósticos que podem ser necessários além do motivo para o encontro p.e. diagnóstico de admissão ou pré-operatório como parte de uma admissão para um procedimento hospitalar. Use EVALUATION.problem_diagnosis (e especializações relacionadas) para este propósito.\r\n",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the reason, or reasons, for initiation of any type of healthcare encounter or contact by the individual who is the subject of care.",
+          "keywords" : [ "presentation", "presenting complaint", "reason for encounter", "reason", "chief complaint", "visit", "reason for visit" ],
+          "use" : "Use to record the reason, or reasons, for initiation of any type of healthcare encounter or contact between a healthcare provider and the individual who is the subject of care. The reason may be for clinical, social or administrative purposes.\r\n\r\nReason for Encounter is a common phrase used in clinical medicine, however the term is often used in two common ways - one that refers to an administrative category for provision of healthcare and the other that reflects clinical or social problems that motivate individuals to seek healthcare.\r\n\r\nIn an effort to clarify the phrases and intent, this archetype contains two data elements:\r\n- The first, 'Contact type', to document the administrative type of healthcare sought or required - for example the type of consultation, emergency care, pre-operative assessment, routine antenatal visit or elective admission. This data element reflects the administrative category of care provision. Use of the phrase 'Contact type', rather than 'Reason for encounter' or 'Reason for visit' reflects the increasing trend towards alternative methods of healthcare provision that may not result in face-to-face contact between the healthcare provider and patient within a consulting room.\r\n- The second, 'Presenting problem', to document the clinical reasons for healthcare contact. Chief complaint is regarded as a synonym for 'Presenting problem'. These are intended mainly to capture the patient's perceived issues or symptoms which have triggered them to seek healthcare advice, such as desire to quit smoking, stress, shortness of breath, genetic counselling or abdominal pain. Signs such as impaired conscious state may also be captured here, for example by paramedical staff with an unconscious patient.",
+          "misuse" : "Not to be used to record specific details of the patient's story or history of symptoms. Use OBSERVATION.story to capture the narrative and the related nested CLUSTER archetypes for structured content eg CLUSTER.symptom, CLUSTER.event and CLUSTER.issue.\r\n\r\nNot to be used to record specific diagnosis details that may be required in addition to a Reason for Encounter. For example, to record a Pre-operative Diagnosis as part of admission for a hospital procedure. Use the EVALUATION.problem_diagnosis archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registrar los motivos de un paciente para iniciar un encuentro o contacto con un proveedor de salud.",
+          "keywords" : [ "problema", "síntoma", "razón", "motivo de consulta", "visita", "consulta" ],
+          "use" : "Utilizar para registrar los motivos de un paciente para iniciar un encuentro o contacto con un proveedor de salud. El motivo tener un propósito clínico, social o administrativo.\r\n\r\nEl arquetipo incluye dos elementos principales:\r\n\r\n- Motivo de consulta: para registrar el dato administrativo relacionado al tipo de asistencia médica buscada por el paciente.\r\n- Problema presentado: para registrar los problemas o síntomas que el paciente percibe, y que lo motivan a buscar asistencia médica. También se pueden registrar datos como el estado de conciencia de un paciente, por ejemplo por personal paramédico atendiendo a un paciente inconsciente.",
+          "misuse" : "No se debe utilizar para registrar detalles específicos sobre la historia de síntomas del paciente. Para eso utilizar el arquetipo OBSERVATION.story.\r\n\r\nNo debe ser utilizado para registrar diagnósticos. Para eso utilizar el arquetipo EVALUATION.problem_diagnosis.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.reason_for_encounter.v1",
     "differential" : true,
@@ -638,7 +717,172 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "C372CBF8FD903DD4B96B6327ABBBAE1F"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Beschreibung der klinischen Vorgeschichte des Patienten und die Entwicklung eines Frameworks für die Erstellung eines detaillierten CLUSTER-Archetyps, der die Darstellung mit zusätzlichen strukturierten Details zu Symptomen, gesundheitlichen Ereignissen und verwandten Bereichen unterstützt. \r\n\r\nZur Repräsentation der klinischen Vorgeschichte einer Person, eines Elternteils, eines Betreuers oder einer anderen Partei. Sie kann von einem Kliniker als Teil der ihm vorgelegten klinischen Anamnese erfasst werden oder als Teil eines klinischen Fragebogens oder einer persönlichen Patientenakte selbst erfasst werden.",
+          "keywords" : [ "Vorgeschichte", "vorliegende", "Beschwerde", "Erzählung", "Symptom", "Gesundheit", "Aufzeichnung", "aktuelle Beschwerde", "Anamnese" ],
+          "use" : "Zur Repräsentation einer Beschreibung über subjektive gesundheitsbezogene Beobachtungen oder Eindrücke aus Sicht der zu pflegenden Person.\r\n\r\nWenn es von einem Kliniker im Kontext der Gesundheitsversorgung aufgezeichnet wird, kann die Geschichte genutzt werden, um die klinische Vorgeschichte zu erfassen, wie sie von der Person selbst, einem Elternteil, Pflegeperson oder anderen beteiligten Parteien berichtet wurde. Falls diese von der Person selbst erfasst wird, kann sie als Bericht über ihre \"Geschichte\" von Symptomen und Gesundheitserfahrungen verwendet werden, der zum Austausch mit den Gesundheitsdienstleistern oder zur Dokumentation in ihrer persönlichen Gesundheitsakte verwendet werden kann.\r\n\r\nVerwendung:\r\n- zum Darstellen einer einfachen Erzählung; und/oder\r\n- als Container-Archetyp, um die Darstellung einer detaillierten strukturierten Geschichte durch die Einbeziehung relevanter CLUSTER-Archetypen innerhalb des \"Strukturierte Angabe\"-SLOTs zu ermöglichen. Zum Beispiel können CLUSTER.symptom-, CLUSTER.issue- oder CLUSTER.health_event-Archetypen in diesem SLOT angemessen verwendet werden.\r\n\r\nDiesen Archetypen verwenden, um die aus bestehenden oder alten klinischen Systemen erfasste Beschreibungen der klinischen Vorgeschichte in einem archetypischen Format mit Hilfe des 'Story'-Textdatenelements integrieren.",
+          "misuse" : "Nicht zur Repräsentation formaler Beurteilungen von Klinikern, die in der Regel unter Nutzung der Archetypenklasse EVALUATION erfasst werden.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera en beskrivning av vårdtagarens sjukdomshistoria samt tillhandahålla ett ramverk i vilken detaljerade CLUSTER-arketyper ska infogas, där syftet med var och en är att stödja berättelsen med ytterligare detaljer för symptom, hälsohändelser och relaterade ämnen.\r\n\r\nAnvänds för att registrera detaljer om en sjukdomshistoria som rapporterats av vårdtagare, förälder, vårdgivare eller annan part. Detta kan registreras som en del av en sjukdomshistoria som rapporterats direkt till en kliniker, eller registreras som en del av ett kliniskt frågeformulär eller patientjournal.",
+          "keywords" : [ "presenterar", "klagomål", "berättelse", "symptom", "hälsa", "journal", "anamnes", "sjukdomshistoria" ],
+          "use" : "Används för att registrera en beskrivning av subjektiva, hälsorelaterade observationer eller intryck ur vårdtagarens perspektiv. \r\n\r\nOm registrering sker av en kliniker, kan berättelsen användas för att fånga sjukdomshistorian som rapporterats antigen av vårdtagaren, en förälder, vårdgivaren eller annan närstående. Om registrering sker av vårdtagaren själv, kan berättelsen användas som en redogörelse för deras symptom och hälsoupplevelser, som i sin tur kan användas för att dela med vårdgivare eller för att dokumentera i deras egna personliga hälsojournaler.\r\n\r\nAnvändningsområden:\r\n- registrering av en enkel sjukdomshistoria; och/eller\r\n- som en containerarketyp för att möjliggöra registrering av en detaljerad berättelse genom att inkludera relevanta CLUSTER-arketyper i \"Detail\"-SLOT. Till exempel kan CLUSTER.symptom, CLUSTER.issue eller CLUSTER.health_event-arketyper användas på lämpligt sätt i denna SLOT.\r\n\r\nAnvänds för att införliva de beskrivningar av sjukdomshistorier som finns dokumenterade i befintliga eller äldre kliniska system i ett arketypiskt format med hjälp av dataelementet ”Berättelse”.",
+          "misuse" : "Ska inte användas för att registrera formella bedömningar av kliniker. Dessa registreras vanligtvis med EVALUATION-klassen av arketyper.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "*To record a narrative description of the clinical history, as told to a clinician or recorded directly by an individual/patient, and to provide a framework in which to nest detailed CLUSTER archetypes, each of which will describe the various aspects of the clinical history in further detail.(en)",
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ko" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ko"
+          },
+          "purpose" : "개인/환자가 의사에게 이야기하거나 직접 기록한 임상 병력에 대한 서술을 기록하기 위한 것과 상세한 CLUSTER archetypes를 포함할 수 있는 프레임워크를 제공하는 것으로 각각에 임상 병력의 다양한 측면들을 상세하게 기술될 것이다.",
+          "keywords" : [ "*병력(ko)", "*현재(ko)", "*호소(ko)", "*이야기(ko)" ],
+          "use" : "환자가 의사에게 이야기한 공식적인 '현재 호소하는 병력(History of Presenting Complaint)'을 기록하기 위해서 사용함; 또는 (예를 들어 개인건강기록에 있는) 개인 자신의 증상들의 '이야기(story)를 설명한 것을 기록하기 위해 사용함.\r\n\r\n기존 또는 이전의 임상 시스템 내의 임상 병력의 서술을 'Story' data element을 사용하여 archetyped format으로 통합하기위해 사용함.\r\n\r\n단순한 서술을 기록하기 위해 사용함 그리고/또는 container archetype으로써 - 추가적이고 특정한 그리고 상세한 CLUSTER archetypes에 의해 확장될 수 있는 공통의 쿼리가능한 ENTRY archetype framework를 제공함. 각각에 임상병력의 다양한 측면을 기술될 것임. 병력과 관련된 CLUSTER archetypes의 예는 CLUSTER.symptom 또는 CLUSTER.health_event를 포함한다.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en fritekstbeskrivelse av individets sykehistorie/anamnese og som et rammeverk for å nøste detaljerte CLUSTER-arketyper som hver for seg kan detaljere ulike aspekter av sykehistorien, som symptomer, helserelaterte hendelser, og andre tilgrensende emner.\r\n\r\nBrukes for å registrere detaljer om sykehistorien slik den blir fortalt av et individ, pårørende, eller en annen part. Det kan registreres av en kliniker som del av opptak av sykehistorie, eller selvregistreres som del av et spørreskjema eller personlig helsearkiv.",
+          "keywords" : [ "anamnese", "sykehistorie", "problem", "helseplage", "bekymring" ],
+          "use" : "Brukes for å registrere en beskrivelse av subjektive helserelaterte observasjoner eller inntrykk fra individets synsvinkel.\r\n\r\nNår anamnesen registreres av en kliniker i en konsultasjon kan arketypen brukes for å registrere den kliniske historikken til individet, rapportert av individet selv, en forelder, pårørende eller en annen involvert part. Dersom den registreres av individet selv, kan den brukes som en oversikt over symptom- og helseerfaringer, som kan deles med helsepersonell eller som dokumentasjon i deres eget helsearkiv.\r\n\r\nBrukes:\r\n- for å registrere en enkelt fritekst\r\n- som et rammeverk for å registrere en detaljert strukturert historikk ved å inkludere relevante CLUSTER-arketyper i SLOTet \"Strukturerte detaljer\". Eksempler kan være CLUSTER.symptom_sign eller CLUSTER.health_event.\r\n\r\nBrukes for å kunne gjenbruke anamnese i eksisterende systemer inn i et arketypeformat ved hjelp av 'Anamnese'-dataelementet.",
+          "misuse" : "Skal ikke brukes for å registrere formelle vurderinger av klinikere. Disse registreres ved hjelp av forskjellige arketyper av klassen EVALUATION.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registrar uma descrição narrativa da história clínica do sujeito do cuidado e para fornecer um quadro no qual se aninha arquétipos CLUSTER detalhados, cada um dos quais irão apoiar a narrativa com detalhes estruturados adicionais para sintomas, eventos de saúde e tópicos relacionados.\r\n\r\nUse para registrar detalhes sobre a história clínica relatada por um indivíduo, pais, cuidador ou outra pessoa. Pode ser registrado pelo médico como parte de um registro de história clínica relatado, ou auto-registrado como parte de um questionário clínico ou registro de saúde pessoal.",
+          "keywords" : [ "história", "queixa", "sintoma", "saúde", "gravar", "apresentando queixa", "anamnese", "presente" ],
+          "use" : "Use para registrar uma descrição sobre observações ou impressões subjetivas relacionadas à saúde do ponto de vista do sujeito do cuidado.\r\n\r\nQuando registrado por um médico dentro do contexto de provisão de cuidados de saúde, a história pode ser utilizada para capturar a história clínica, como relatado pelo próprio sujeito, pais, cuidador ou outra parte relacionada. Se gravado pelo próprio sujeito, pode ser usado como um relato de sua \"história\" de sintomas e experiências de saúde, que pode ser usado para compartilhar com os prestadores de cuidados de saúde ou para documentar dentro do seu próprio registro de saúde pessoal.\r\n\r\nUsar:\r\n- para gravar uma narrativa simples; e/ou\r\n- como um arquétipo contêiner para permitir o registro de um histórico detalhado por inclusão de arquétipos CLUSTER relevantes dentro do SLOT Detalhes. Por exemplo: arquétipos CLUSTER.symptom, CLUSTER.issue ou CLUSTER.health_event podem ser adequadamente utilizados neste SLOT.\r\n\r\nUse para incorporar as descrições narrativas da história clínica capturadas de sistemas clínicos existentes ou herdados em um formato arquetipado, usando o elemento de dados de texto \"História\".",
+          "misuse" : "Não deve ser usado para gravar avaliações formais por médicos que normalmente seriam gravadas usando a classe de arquétipos EVALUATION.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "*To record a narrative description of the clinical history, as told to a clinician or recorded directly by an individual/patient, and to provide a framework in which to nest detailed CLUSTER archetypes, each of which will describe the various aspects of the clinical history in further detail.(en)",
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a narrative description of the clinical history of the subject of care and to provide a framework in which to nest detailed CLUSTER archetypes, each of which will support the narrative with additional structured detail for symptoms, health events and related topics.\r\n\r\nUse to record detail about the clinical history as reported by an individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, or self-recorded as part of a clinical questionnaire or personal health record.",
+          "keywords" : [ "history", "presenting", "complaint", "story", "symptom", "health", "record", "presenting complaint", "anamnesis" ],
+          "use" : "Use to record a description about subjective health-related observations or impressions from the point of view of the subject of care. \r\n\r\nWhen recorded by a clinician within the context of healthcare provision the story can be used for capturing the clinical history, as reported by the subject themselves, a parent, care-giver or other related party. If recorded by the subject, it can be used as an account of their 'story' of symptoms and health experiences, which might be used to share with healthcare providers or to document within their own personal health record.\r\n\r\nUse:\r\n- to record a simple narrative; and/or \r\n- as a container archetype to enable recording of a detailed structured history by inclusion of relevant CLUSTER archetypes within the 'Detail' SLOT. For example: CLUSTER.symptom, CLUSTER.issue or CLUSTER.health_event archetypes can be appropriately used in this SLOT.\r\n\r\nUse to incorporate the narrative descriptions of clinical history captured from existing or legacy clinical systems into an archetyped format, using the 'Story' text data element.",
+          "misuse" : "Not to be used to record formal assessments by clinicians which would usually be recorded using the EVALUATION class of archetypes.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Registrare una descrizione narrativa della storia clinica del soggetto di cura e fornire un quadro in cui annidare gli archetipi dettagliati di CLUSTER, ognuno dei quali supporterà la narrazione con ulteriori dettagli strutturati per i sintomi, gli eventi sanitari e gli argomenti correlati.\r\n\r\nUsato per registrare i dettagli della storia clinica come riportata da un individuo, da un genitore, da un caregiver o da un altro soggetto. Può essere registrato da un clinico come parte di una storia clinica così come riportata, o autoregistrato come parte di un questionario clinico o di una cartella clinica personale.",
+          "keywords" : [ "cronologia, presentazione, segnalazione, storia, sintomo, salute, registrazione, presentazione di una lamentela, anamnesi" ],
+          "use" : "Usato per registrare una descrizione delle osservazioni o impressioni soggettive relative alla salute dal punto di vista del soggetto di cura.\r\n\r\nQuando viene registrata da un clinico nell'ambito dell'assistenza sanitaria, la storia può essere utilizzata per acquisire l'anamnesi clinica, come riportata dal soggetto stesso, da un genitore, da un care-giver o da altre parti correlate. Se registrata dal soggetto, può essere utilizzata come resoconto della sua \"cronologia\" di sintomi ed esperienze di salute, e può essere utilizzata per condividerla con gli operatori sanitari o per documentare all'interno della cartella clinica personale del soggetto.\r\n\r\nUtilizzo:\r\n- per registrare una semplice narrazione; e/o\r\n- come archetipo di contenitore per consentire la registrazione di una storia strutturata e dettagliata includendo i relativi archetipi di CLUSTER all'interno dello SLOT \"Dettaglio\". Per esempio: Gli archetipi di CLUSTER.symptom, CLUSTER.issue o CLUSTER.health_event possono essere utilizzati in modo appropriato in questo SLOT.\r\n\r\nUtilizzare per incorporare le descrizioni narrative della storia clinica acquisite da sistemi clinici esistenti o preesistenti in un formato archetipizzato, utilizzando l'elemento \"Storia\".\r\n",
+          "misuse" : "Da non utilizzare per registrare le valutazioni formali dei clinici che di solito vengono registrate utilizzando la classe EVALUATION degli archetipi.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "旨在用于记录照护服务对象临床病史的叙述性描述，并提供可用于在其中嵌套其他详细的群簇型（CLUSTER ）原始型的框架；其中，所嵌入的每个原始型分别会利用进一步关于症状、健康事件和相关主题的结构化详情来支持上述的叙述。\r\n\r\n用于记录关于个人、父母、照护人员/照料者或其他参与方所报告的临床病史的详细信息。临床医务人员/临床医生可能会将其记录为向他们所报告的临床病史记录的组成部分，或者是照护服务对象将其自行记录为临床问卷或个人健康档案的组成部分。",
+          "keywords" : [ "病史", "历史", "陈述", "描述", "叙述", "主诉", "抱怨", "症状", "健康", "档案", "记录", "既往史", "既往病史" ],
+          "use" : "用于从照护服务对象的角度记录关于主观性的健康相关观察或印象的描述。\r\n\r\n当临床医务人员/临床医生在提供医疗保健服务的背景下加以记录时，临床病史叙述原始型可用于采集照护服务对象自己、父母、照护人员或其他相关[参与]方所报告的临床病史。如果记录者为照护服务对象，则可将其作为对于其症状和健康经历/体验的“临床病史叙述”的说明，而且还可能会将此类的临床病史叙述用来与医疗保健服务人员进行分享，或者是在照护服务对象的个人健康当中进行记录。\r\n\r\n用于：\r\n- 记录一个简单的叙述；和/或\r\n- 作为容器型的原始型，通过在“详情”（Detail）槽位当中收纳相关的群簇型（CLUSTER ）原始型，从而使得能够记录详细的结构化病史。例如：可以在这一槽位当中酌情使用群簇型症状原始型 CLUSTER.symptom、群簇型事项原始型 CLUSTER.issue 或群簇型健康事件原始型 CLUSTER.health_event。\r\n\r\n用于采用原始型的格式，利用“临床病史叙述”（Story）文本型数据元，收纳从已有或历史遗留的临床系统之中所采集的关于临床病史的叙述性描述。",
+          "misuse" : "并非旨在用于记录临床医务人员/临床医生的正式评估[结果]。后者的记录通常会采用的是评估（EVALUATION）类的原始型。",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "*To record a narrative description of the clinical history of the subject of care and to provide a framework in which to nest detailed CLUSTER archetypes, each of which will support the narrative with additional structured detail for symptoms, health events and related topics.\r\n\r\nUse to record detail about the clinical history as reported by an individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, or self-recorded as part of a clinical questionnaire or personal health record.(en)",
+          "keywords" : [ "*history(en)", "*presenting(en)", "*complaint(en)", "*story(en)", "*symptom(en)", "*health(en)", "*record(en)", "*presenting complaint(en)", "*anamnesis(en)" ],
+          "use" : "*Use to record a description about subjective health-related observations or impressions from the point of view of the subject of care. \r\n\r\nWhen recorded by a clinician within the context of healthcare provision the story can be used for capturing the clinical history, as reported by the subject themselves, a parent, care-giver or other related party. If recorded by the subject, it can be used as an account of their 'story' of symptoms and health experiences, which might be used to share with healthcare providers or to document within their own personal health record.\r\n\r\nUse:\r\n- to record a simple narrative; and/or \r\n- as a container archetype to enable recording of a detailed structured history by inclusion of relevant CLUSTER archetypes within the 'Detail' SLOT. For example: CLUSTER.symptom, CLUSTER.issue or CLUSTER.health_event archetypes can be appropriately used in this SLOT.\r\n\r\nUse to incorporate the narrative descriptions of clinical history captured from existing or legacy clinical systems into an archetyped format, using the 'Story' text data element.(en)",
+          "misuse" : "*Not to be used to record formal assessments by clinicians which would usually be recorded using the EVALUATION class of archetypes.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.story.v1",
     "differential" : true,
@@ -880,7 +1124,132 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "BE1FF729C2FD4185A0A51FDE33A48A52"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung von Details über eine einzelne Episode eines berichteten Symptoms oder Krankheitsanzeichens einschließlich des Kontexts. Details zu früheren Episoden sollen, wenn angemessen, nicht aufgeführt werden.",
+          "keywords" : [ "Beschwerde", "Symptom", "Störung", "Problem", "vorlegende Beschwerde", "vorlegendes Symptom", "Zeichen", "Anzeichen", "Krankheitsanzeichen" ],
+          "use" : "Zu Verwenden, um Details über eine einzelne Episode eines Symptoms oder eines berichteten Krankheitsanzeichens einer Person zu dokumentieren, wie es von der Person, dem Elternteil, dem Betreuer oder einer anderen Partei berichtet wurde. Es kann von einem Arzt als Teil einer Krankengeschichte dokumentiert werden, oder wie es dem Arzt berichtet wurde/wie er es beobachtet hat, oder als Teil eines selbst aufgezeichneten klinischen Fragebogens oder einer persönlichen Gesundheitsakte. Eine vollständige Kranken- oder Patientengeschichet kann mehrere Episoden eines identifizierten Symptoms/Krankheitsanzeichens, mit variierendem Detaillierungsgrad, sowie mehrere Symptome/Krankheitsanzeichen beinhalten.\r\n\r\nDieser Archetyp wurde entwickelt, um das positive Vorhandensein des Symptoms oder Krankheitsanzeichens als Teil der Anamneseerhebung mit OBSERVATION.story oder in Verbindung mit einer positiven Reaktion auf OBSERVATION.symptom_sign_screening darzustellen.\r\n\r\nIm reinsten Sinne sind Symptome subjektive Beobachtungen einer körperlichen oder geistigen Störung und Krankheitsanzeichen sind objektive Beobachtungen dieser Störung, wie sie von einer Person erlebt und dem Dokumentierenden von derselben Person oder einer anderen Partei berichtet werden. Aus dieser Logik folgt, dass zwei Archetypen benötigt werden, um die Krankengeschichte aufzuzeichnen - einen für berichtete Symptome und einen weiteren für berichtete Krankheitsanzeichen. Für die Praxis ist dies ungeeignet, da es die Eingabe klinischer Daten in eines der beiden Modelle erfordert, was den Modellierern und denen, die die Daten eingeben, erheblichen Mehraufwand verursacht. Darüber hinaus gibt es oft Überschneidungen von klinischen Konzepten - z.B. ist vorangegangenes Erbrechen oder sind Blutungen als Symptom oder berichtetes Krankheitsanzeichen zu kategorisieren? Als Antwort darauf wurde dieser Archetyp speziell entwickelt, um ein einziges Informationsmodell zu erproben, das es ermöglicht, das gesamte Spektrum von klar identifizierbaren Symptomen bis hin zu berichteten Krankheitsanzeichen bei der Dokumentation einer Krankengeschichte zu erfassen.\r\n\r\nDieser Archetyp wurde als generisches Muster für alle Symptome und Krankheitsanzeichen entwickelt. Der Slot \"Spezifische Details\" kann verwendet werden, um den Archetyp um zusätzliche, spezifische Datenelemente für komplexere Symptome oder Krankheitsanzeichen zu erweitern. \r\n\r\nDieser Archetyp wurde speziell für die Verwendung im Slot \"Strukturiertes Detail\" innerhalb des Archetyps OBSERVATION.story entwickelt, kann aber auch in anderen OBSERVATION- oder CLUSTER-Archetypen und in den Slots \"Assoziierte Symptome/Krankheitsanzeichen\" oder \"Vorangegangene Episoden\" in anderen Instanzen dieses CLUSTER.symptom_sign Archetyps verwendet werden.",
+          "misuse" : "Den Archetyp nicht verwenden, um Antworten auf Screening-Fragebögen über das Vorhandensein oder Nichtvorhandensein bestimmter Symptome abzufragen – verwenden Sie für diesen Zweck den Archetyp OBSERVATION.symptom_sign_screening. Dieser CLUSTER.symptom_sign kann jedoch im SLOT „Screening-Details“ im Archetyp OBSERVATION.symptom_sign_screening verschachtelt werden, wenn es notwendig ist, den Fragebogen zu erweitern, indem Details zu Symptomen oder Anzeichen aufgezeichnet werden.\r\n\r\nDen Archetyp nicht verwenden, um darzustellen, dass ein Symptom oder Anzeichen explizit als nicht vorhanden gemeldet wurde – verwenden Sie CLUSTER.exclusion_symptom_sign mit Bedacht für bestimmte Zwecke, bei denen der Overhead der Aufzeichnung auf diese Weise die zusätzliche Komplexität rechtfertigt.\r\n\r\nNicht zur Erfassung objektiver Befunde im Rahmen einer körperlichen Untersuchung verwenden - verwenden Sie zu diesem Zweck OBSERVATION.exam und mit Untersuchung verwandte CLUSTER-Archetypen.\r\n\r\nNicht für Diagnosen und Probleme, die Teil einer bestehenden Problemliste sind, verwenden - verwenden Sie EVALUATION.problem_diagnosis.\r\n\r\nNicht zur Darstellung einer formalen und wiederholbaren Schweregradskala wie VAS oder NRS verwenden. Verwenden Sie zu diesem Zweck geeignete OBSERVATION-Archetypen.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fi" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fi"
+          },
+          "purpose" : "*To record details about a single episode of a reported symptom or sign including context, but not details, of previous episodes if appropriate.(en)",
+          "keywords" : [ "*complaint(en)", "*symptom(en)", "*disturbance(en)", "*problem(en)", "*discomfort(en)", "*presenting complaint(en)", "*presenting symptom(en)", "*sign(en)" ],
+          "use" : "*Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.\r\n\r\nThis archetype has been designed to record the positive presence of the symptom or sign as part of history taking using OBSERVATION.story, or in conjunction with a positive response to OBSERVATION.symptom_sign_screening.\r\n\r\nIn the purest sense, symptoms are subjective observations of a physical or mental disturbance and signs are objective observations of the same, as experienced by an individual and reported to the history taker by the same individual or another party. From this logic it follows that we will need two archetypes to record clinical history - one for reported symptoms and another for reported signs. In reality this is impractical as it will require clinical data entry into either one of these models which adds signficant overheads to modellers and those entering data. In addition, there is often overlap in clinical concepts - for example, is previous vomiting or bleeding to be categorised as a symptom or reported sign? In response, this archetype has been specifically designed to provide a single information model that allows for recording of the entire continuum between clearly identifiable symptoms and reported signs.\r\n\r\nThis archetype has been intended to be used as a generic pattern for all symptoms and reported signs. The 'Specific details' SLOT can be used to extend the archetype to include additional, specific data elements for more complex symptoms or signs. \r\n\r\nThis archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes and in the 'Associated symptom/sign' or 'Previous episode' SLOT within other instances of this CLUSTER.symptom_sign archetype. (en)",
+          "misuse" : "*Not to be used to record screening questionnaire responses about the presence or absence of specific symptoms - use the OBSERVATION.symptom_sign_screening archetype for this purpose. However, this CLUSTER.symptom_sign archetype may be nested within the 'Screening details' SLOT in the OBSERVATION.symptom_sign_screening archetype if it is necessary to extend the questionnaire by recording details about symptom or sign.\r\n\r\nNot to be used to record that a symptom or sign was explicitly reported as not present - use CLUSTER.exclusion_symptom_sign carefully for specific purposes where the overheads of recording in this way warrant the additional complexity.\r\n\r\nNot to be used for recording objective findings as part of a physical examination - use OBSERVATION.exam and related examination CLUSTER archetypes for this purpose.\r\n\r\nNot to be used for diagnoses and problems that form part of a persisting Problem List - use EVALUATION.problem_diagnosis.\r\n\r\nNot to be used to record a formal and repeatable severity scale such as VAS or NRS. Use appropriate OBSERVATION archetypes for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För att registrera detaljer om en enskild episod av ett rapporterat symptom eller tecken inklusive dess sammanhang, men inte detaljer om tidigare episoder, om så är lämpligt",
+          "keywords" : [ "klagomål", "symptom", "störning", "besvär", "problem", "obehag", "framföra besvär", "framföra symtom", "tecken" ],
+          "use" : "Används för att registrera detaljer om en enskild episod av ett symptom eller rapporterat tecken hos en individ, som det rapporterats av individen, föräldern, vårdgivaren eller annan part. Det kan registreras av en läkare som en del av en journal dokumentation som rapporterats till dem, observerad av läkaren eller självregistrerad som en del av ett kliniskt frågeformulär eller personlig journal. En fullständig klinisk historia eller patientberättelse kan innehålla varierande nivå av detaljer om flera episoder av ett identifierat symptom eller rapporterat tecken, såväl som flera symtom/tecken.\r\n\r\nDen här arketypen har utformats för att registrera förekomsten av symtomet eller tecknet som en del av historiken med OBSERVATION.story, eller i samband med ett positivt svar vid användningen av OBSERVATION.symptom_sign_screening.\r\n\r\nI sin renaste mening är symtom subjektiva observationer av en fysisk eller psykisk störning och tecken är objektiva observationer av detsamma, som upplevs av en individ och rapporteras till vårdgivaren för samma individ eller annan part. Av denna logik följer att vi kommer att behöva två arketyper för att registrera den kliniska historiken - en för rapporterade symtom och en annan för rapporterade tecken. I verkligheten är detta opraktiskt eftersom det kommer att kräva inmatning av kliniska data i någon av dessa modeller, vilket lägger till betydande omkostnader för modellerare och de som matar in data. Dessutom finns det ofta en överlappning i mellan olika kliniska begrepp. Är till exempel, tidigare kräkningar eller blödningar att kategoriseras som ett symptom eller rapporterat tecken? Som svar på detta, har denna arketyp utformats specifikt för att tillhandahålla en enda informationsmodell som möjliggör registrering av ett sammanhängande flöde mellan tydligt identifierbara symtom och rapporterade tecken.\r\n\r\nDenna arketyp är avsedd för att kunna användas som en generisk modell för alla symtom och rapporterade tecken.'Specific details' SLOT kan användas för att utöka arketypen till att inkludera ytterligare, specifika dataelement för mer komplexa symtom eller tecken.\r\n\r\nDenna arketyp har utformats specifikt för att användas i \"Structured detail\" SLOT inom arketypen OBSERVATION.story, men kan också användas inom andra OBSERVATION eller CLUSTER arketyper och i \"Associated symptom/tecken\" eller \"Previous episode\" SLOT, såväl som även nom andra instanser av denna CLUSTER.symptom_sign-arketyp.\r\n",
+          "misuse" : "Får inte användas för att registrera svar från screening frågeformulär om närvaro eller frånvaro av specifika symptom.Använd då istället arketypen OBSERVATION.symptom_sign_screening för detta ändamål. Emellertid kan den här CLUSTER.symptom_sign-arketypen vara inkapslad i \"Screening details\" SLOT i arketypen OBSERVATION.symptom_sign_screening om det är nödvändigt att utöka frågeformuläret genom att registrera detaljer om symptom eller tecken.\r\n\r\nSka inte användas för att registrera ett specifikt symptom eller tecken som inte är närvarande. Använd istället arketypen CLUSTER.exclusion_symptom_sign på ett noggrant sätt för att motivera det övergripande syftet för denna registrering och därmed den ökade komplexitet.\r\n\r\nFår inte användas för att registrera objektiva fynd som en del av en fysisk undersökning , Använd istället arketypen OBSERVATION.exam och relaterade undersökningar i CLUSTER-arketyper för detta ändamål.\r\n\r\nSka inte användas för diagnoser och problem som ingår i en kvarstående problemlista. Använd istället arketypen EVALUATION.problem_diagnosis.\r\n\r\nSka inte användas för att registrera en accepterad och repeterbar svårighetsskala som VAS eller NRS. Använd lämpliga OBSERVATIONSarketyper för detta ändamål.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljer om en enkeltepisode av et rapportert symptom eller sykdomstegn. Dette kan omfatte kontekst, men ikke detaljer, om tidligere episoder av symptomet/sykdomstegnet.",
+          "keywords" : [ "lidelse", "plage", "problem", "ubehag", "symptom", "sykdomstegn", "lyte", "skavank" ],
+          "use" : "\t\r\nFor å registrere detaljer om en enkeltepisode av et rapportert symptom eller sykdomstegn hos et individ, som redegjort av personen selv, foreldre, omsorgsperson eller andre parter. Registrering kan skje i forbindelse med opptak av anamnese, eller som en selvregistrering som en del av et klinisk spørreskjema eller personlig journal. En fullstendig klinisk anamnese eller pasientanamnese kan inneholde beskrivelser med ulikt detaljnivå om flere episoder knyttet til samme symptom eller sykdomstegn, og vil også kunne inneholde flere ulike symptomer eller sykdomstegn.\r\n\r\nDenne arketypen er laget for å registrere positiv tilstedeværelse av et symptom eller sykdomstegn som en del av anamneseopptak ved å bruke OBSERVATION.story-arketypen, eller i sammenheng med et positivt svar i arketypen OBSERVATION.symptom_sign_screening.\r\n\r\nI egentlig forstand er symptomer subjektive opplevelser av en fysisk eller mental forstyrrelse mens sykdomstegn er objektive observasjoner av det samme, som er erfart av et individ og rapportert til en kliniker av individet eller av andre. Fra denne logikken følger at det burde være to arketyper til å registrere klinisk anamnese; en for rapporterte symptomer og en for rapporterte sykdomstegn. I virkeligheten er dette upraktisk og vil kreve registrering av kliniske data i enten den ene eller den andre av disse modellene. I praksis vil dette øke kompleksitet og tidsbruk knyttet til modellering og registrering av data. I tillegg overlapper ofte de kliniske konseptene, for eksempel: Vil tidligere oppkast eller blødning kategoriseres som et symptom eller som et rapportert sykdomstegn?\r\nSom svar på dette er arketypen laget for å tillate registrering av hele kontinuumet mellom tydelig definerte symptomer og rapporterte sykdomstegn.\r\n\r\nArketypen er designet for å gi et generisk rammeverk for alle symptomer og rapporterte sykdomstegn. SLOTet \"Spesifikke detaljer\" kan brukes for å utvide arketypen med ytterligere spesifikke dataelementer for komplekse symptomer eller sykdomstegn.\r\n\r\nArketypen skal settes inn i \"Detaljer\"-SLOTet i OBSERVATION.story-arketypen men kan også brukes i en hvilken som helst OBSERVATION eller CLUSTER-arketype. Arketypen kan også gjenbrukes i andre instanser av CLUSTER.symptom_sign-arketypen i SLOTene \"Assosierte symptomer\" eller \"Tidligere detaljer\".",
+          "misuse" : "Brukes ikke for å registrere spørreskjema-spørsmål om tilstedeværelsen eller fraværet av spesifikke symptomer eller sykdomstegn. Bruk OBSERVATION.symptom_sign_screening til dette formålet. Imidlertid kan denne CLUSTER.symptom_sign arketypen brukes i SLOTet \"Ytterligere detaljer\" i OBSERVATION.symptom_sign_screening dersom man ønsker å utvide spørreskjemaet med detaljer om et symptom eller sykdomstegn.\r\n\r\nBrukes ikke til eksplisitt registrering av at et symptom eller sykdomstegn ikke er tilstede. Bruk CLUSTER.exclusion_symptom_sign varsomt da det øker tidsbruk ved registrering og tilfører økt kompleksitet.\r\n\r\nBrukes ikke til registrering av objektive funn som en del av en fysisk undersøkelse. Bruk OBSERVATION.exam og relaterte CLUSTER.exam-arketyper for dette formålet.\r\n\r\nBrukes ikke til registrering av problemer og diagnoser som en del av en persistent problemliste, til dette brukes EVALUATION.problem_diagnosis.\r\n\r\nBrukes ikke til å registrere en formell og repeterbar alvorlighetsgradering som VAS eller NRS. Bruk passende OBSERVATION-arketyper til dette formålet.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Registrar detalhes sobre um episódio único de um sinal ou sintoma relatado incluindo contexto, mas não detalhes, de episódios prévios se apropriado.",
+          "keywords" : [ "queixa", "sintoma", "distúrbio", "problema", "desconforto", "queixa atual", "sintoma atual", "sinal" ],
+          "use" : "*Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.\r\n\r\nThis archetype has been designed to record the positive presence of the symptom or sign as part of history taking using OBSERVATION.story, or in conjunction with a positive response to OBSERVATION.symptom_sign_screening.\r\n\r\nIn the purest sense, symptoms are subjective observations of a physical or mental disturbance and signs are objective observations of the same, as experienced by an individual and reported to the history taker by the same individual or another party. From this logic it follows that we will need two archetypes to record clinical history - one for reported symptoms and another for reported signs. In reality this is impractical as it will require clinical data entry into either one of these models which adds signficant overheads to modellers and those entering data. In addition, there is often overlap in clinical concepts - for example, is previous vomiting or bleeding to be categorised as a symptom or reported sign? In response, this archetype has been specifically designed to provide a single information model that allows for recording of the entire continuum between clearly identifiable symptoms and reported signs.\r\n\r\nThis archetype has been intended to be used as a generic pattern for all symptoms and reported signs. The 'Specific details' SLOT can be used to extend the archetype to include additional, specific data elements for more complex symptoms or signs. \r\n\r\nThis archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes and in the 'Associated symptom/sign' or 'Previous episode' SLOT within other instances of this CLUSTER.symptom_sign archetype. (en)",
+          "misuse" : "*Not to be used to record screening questionnaire responses about the presence or absence of specific symptoms - use the OBSERVATION.symptom_sign_screening archetype for this purpose. However, this CLUSTER.symptom_sign archetype may be nested within the 'Screening details' SLOT in the OBSERVATION.symptom_sign_screening archetype if it is necessary to extend the questionnaire by recording details about symptom or sign.\r\n\r\nNot to be used to record that a symptom or sign was explicitly reported as not present - use CLUSTER.exclusion_symptom_sign carefully for specific purposes where the overheads of recording in this way warrant the additional complexity.\r\n\r\nNot to be used for recording objective findings as part of a physical examination - use OBSERVATION.exam and related examination CLUSTER archetypes for this purpose.\r\n\r\nNot to be used for diagnoses and problems that form part of a persisting Problem List - use EVALUATION.problem_diagnosis.\r\n\r\nNot to be used to record a formal and repeatable severity scale such as VAS or NRS. Use appropriate OBSERVATION archetypes for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "*To record detail about a symptom - either self-recorded by an individual or recorded on the behalf of a patient by a clinician. A complete patient history may include varying level of details about a variety of symptoms.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.\r\n\r\nThis archetype has been designed to record the positive presence of the symptom or sign as part of history taking using OBSERVATION.story, or in conjunction with a positive response to OBSERVATION.symptom_sign_screening.\r\n\r\nIn the purest sense, symptoms are subjective observations of a physical or mental disturbance and signs are objective observations of the same, as experienced by an individual and reported to the history taker by the same individual or another party. From this logic it follows that we will need two archetypes to record clinical history - one for reported symptoms and another for reported signs. In reality this is impractical as it will require clinical data entry into either one of these models which adds signficant overheads to modellers and those entering data. In addition, there is often overlap in clinical concepts - for example, is previous vomiting or bleeding to be categorised as a symptom or reported sign? In response, this archetype has been specifically designed to provide a single information model that allows for recording of the entire continuum between clearly identifiable symptoms and reported signs.\r\n\r\nThis archetype has been intended to be used as a generic pattern for all symptoms and reported signs. The 'Specific details' SLOT can be used to extend the archetype to include additional, specific data elements for more complex symptoms or signs. \r\n\r\nThis archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes and in the 'Associated symptom/sign' or 'Previous episode' SLOT within other instances of this CLUSTER.symptom_sign archetype. (en)",
+          "misuse" : "*Not to be used to record screening questionnaire responses about the presence or absence of specific symptoms - use the OBSERVATION.symptom_sign_screening archetype for this purpose. However, this CLUSTER.symptom_sign archetype may be nested within the 'Screening details' SLOT in the OBSERVATION.symptom_sign_screening archetype if it is necessary to extend the questionnaire by recording details about symptom or sign.\r\n\r\nNot to be used to record that a symptom or sign was explicitly reported as not present - use CLUSTER.exclusion_symptom_sign carefully for specific purposes where the overheads of recording in this way warrant the additional complexity.\r\n\r\nNot to be used for recording objective findings as part of a physical examination - use OBSERVATION.exam and related examination CLUSTER archetypes for this purpose.\r\n\r\nNot to be used for diagnoses and problems that form part of a persisting Problem List - use EVALUATION.problem_diagnosis.\r\n\r\nNot to be used to record a formal and repeatable severity scale such as VAS or NRS. Use appropriate OBSERVATION archetypes for this purpose. (en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about a single episode of a reported symptom or sign including context, but not details, of previous episodes if appropriate.",
+          "keywords" : [ "complaint", "symptom", "disturbance", "problem", "discomfort", "presenting complaint", "presenting symptom", "sign" ],
+          "use" : "Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.\r\n\r\nThis archetype has been designed to record the positive presence of the symptom or sign as part of history taking using OBSERVATION.story, or in conjunction with a positive response to OBSERVATION.symptom_sign_screening.\r\n\r\nIn the purest sense, symptoms are subjective observations of a physical or mental disturbance and signs are objective observations of the same, as experienced by an individual and reported to the history taker by the same individual or another party. From this logic it follows that we will need two archetypes to record clinical history - one for reported symptoms and another for reported signs. In reality this is impractical as it will require clinical data entry into either one of these models which adds signficant overheads to modellers and those entering data. In addition, there is often overlap in clinical concepts - for example, is previous vomiting or bleeding to be categorised as a symptom or reported sign? In response, this archetype has been specifically designed to provide a single information model that allows for recording of the entire continuum between clearly identifiable symptoms and reported signs.\r\n\r\nThis archetype has been intended to be used as a generic pattern for all symptoms and reported signs. The 'Specific details' SLOT can be used to extend the archetype to include additional, specific data elements for more complex symptoms or signs. \r\n\r\nThis archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes and in the 'Associated symptom/sign' or 'Previous episode' SLOT within other instances of this CLUSTER.symptom_sign archetype.",
+          "misuse" : "Not to be used to record screening questionnaire responses about the presence or absence of specific symptoms - use the OBSERVATION.symptom_sign_screening archetype for this purpose. However, this CLUSTER.symptom_sign archetype may be nested within the 'Screening details' SLOT in the OBSERVATION.symptom_sign_screening archetype if it is necessary to extend the questionnaire by recording details about symptom or sign.\r\n\r\nNot to be used to record that a symptom or sign was explicitly reported as not present - use CLUSTER.exclusion_symptom_sign carefully for specific purposes where the overheads of recording in this way warrant the additional complexity.\r\n\r\nNot to be used for recording objective findings as part of a physical examination - use OBSERVATION.exam and related examination CLUSTER archetypes for this purpose.\r\n\r\nNot to be used for diagnoses and problems that form part of a persisting Problem List - use EVALUATION.problem_diagnosis.\r\n\r\nNot to be used to record a formal and repeatable severity scale such as VAS or NRS. Use appropriate OBSERVATION archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "*To record details about a single episode of a reported symptom or sign including context, but not details, of previous episodes if appropriate.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.\r\n\r\nThis archetype has been designed to record the positive presence of the symptom or sign as part of history taking using OBSERVATION.story, or in conjunction with a positive response to OBSERVATION.symptom_sign_screening.\r\n\r\nIn the purest sense, symptoms are subjective observations of a physical or mental disturbance and signs are objective observations of the same, as experienced by an individual and reported to the history taker by the same individual or another party. From this logic it follows that we will need two archetypes to record clinical history - one for reported symptoms and another for reported signs. In reality this is impractical as it will require clinical data entry into either one of these models which adds signficant overheads to modellers and those entering data. In addition, there is often overlap in clinical concepts - for example, is previous vomiting or bleeding to be categorised as a symptom or reported sign? In response, this archetype has been specifically designed to provide a single information model that allows for recording of the entire continuum between clearly identifiable symptoms and reported signs.\r\n\r\nThis archetype has been intended to be used as a generic pattern for all symptoms and reported signs. The 'Specific details' SLOT can be used to extend the archetype to include additional, specific data elements for more complex symptoms or signs. \r\n\r\nThis archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes and in the 'Associated symptom/sign' or 'Previous episode' SLOT within other instances of this CLUSTER.symptom_sign archetype. (en)",
+          "misuse" : "*Not to be used to record screening questionnaire responses about the presence or absence of specific symptoms - use the OBSERVATION.symptom_sign_screening archetype for this purpose. However, this CLUSTER.symptom_sign archetype may be nested within the 'Screening details' SLOT in the OBSERVATION.symptom_sign_screening archetype if it is necessary to extend the questionnaire by recording details about symptom or sign.\r\n\r\nNot to be used to record that a symptom or sign was explicitly reported as not present - use CLUSTER.exclusion_symptom_sign carefully for specific purposes where the overheads of recording in this way warrant the additional complexity.\r\n\r\nNot to be used for recording objective findings as part of a physical examination - use OBSERVATION.exam and related examination CLUSTER archetypes for this purpose.\r\n\r\nNot to be used for diagnoses and problems that form part of a persisting Problem List - use EVALUATION.problem_diagnosis.\r\n\r\nNot to be used to record a formal and repeatable severity scale such as VAS or NRS. Use appropriate OBSERVATION archetypes for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.symptom_sign.v2",
     "differential" : true,
@@ -1067,7 +1436,129 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "E60D3BF80853EA29741A2A0A4C08BD8D"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Repräsentation von Informationen über das Auftreten bedeutender gesundheitlicher Probleme bei genetisch und nicht-genetisch verwandten Familienmitgliedern - sowohl lebendig, als auch verstorben.\r\n\r\nDer eigentliche Anwendungsbereich des Archetyps wurde offen gelassen, um verschiedene, mögliche Probleme oder Situationen innerhalb einer Familie zu berücksichtigen. Dazu gehören insbesondere bekannte Probleme und Diagnosen, identifizierte biologische Marker sowie alle relevanten psychosozialen und ökologischen Faktoren.",
+          "keywords" : [ "Familie", "Anamnese", "Gesundheit", "Zustand", "Problem", "Diagnose", "genetisch", "Stammbaum", "Genealogie", "Familienanamnese", "Verwandter", "erblich", "vererbt", "familiär", "Vererbung" ],
+          "use" : "Zur Repräsentation von zusammenfassenden Informationen über Probleme oder Diagnosen bei Familienmitgliedern. Diese Informationen können als Beitrag zur Ermittlung aktueller Gesundheitsprobleme, zur Abschätzung der möglichen Risiken aufgrund familiäre Probleme oder Umstände oder zur Einleitung präventiver Gesundheitsmaßnahmen verwendet werden.\r\n\r\nTraditionell konzentriert sich die Familienanamnese auf die genetischen Faktoren oder Biomarker als Risikoindikatoren oder als potenzielle Gefährdung. Der Archetyp umfasst sowohl die Probleme oder Diagnosen vererbbaren Ursprungs, als auch solche, die nicht direkt vererbbar, sondern von der häuslichen Umgebung oder durch psychosoziale oder ökologische Faktoren beeinflusst werden. Beispiele dafür sind die Belastung der Umgebung der Familie mit Schadstoffen, häusliche Gewalt, sexueller Missbrauch, Alkohol- und andere Suchtprobleme.\r\n\r\nNicht genetische Familienmitglieder sind Adoptivkinder oder Pflegekinder über längere Zeit, durch Eheschließung verwandte Personen, oder andere nicht verwandte Personen, die am regulären Leben der Familie Teil- oder Einfluss haben.\r\n\r\nDieser Archetyp wurde so konzipiert, dass er Folgendes beinhaltet:\r\n- eine Beschreibung als Freitext. Dadurch können Details der Familienanamnese aus bestehenden Systemen als unstrukturierter Text übernommen werden; und\r\n- einen detaillierten Bereich, der sich auf relevante gesundheitliche Details über bestimmte Familienmitglieder konzentriert, einschließlich ihrer Anamnese und Biomarker.\r\n\r\nDieser Archetyp kann in vielen Kontexten verwendet werden. Zum Beispiel, zum Aufzeichnen einer Anamneseangabe im Rahmen eines klinischen Beratungsgesprächs; zum Erzeugen einer Liste zur Familienanamnese, oder Bereitstellung einer Zusammenfassung in einem Entlassungsbericht.\r\n\r\nZusätzliche Angaben über spezifische Probleme, Diagnosen oder bisherige Verfahren bei einem Familienmitglied können mit Hilfe des Archetyps EVALUATION.Problem/Diagnose oder des Archetyps ACTION.Prozedur erfasst werden, wobei die Pflegeperson \"Subject of Care\" ein Familienmitglied und nicht den Patienten laut Krankenakten darstellt.\r\n\r\nDieser Archetyp kann als Grundlage für ein Familienstammbaum-Diagramm von Gesundheitsproblemen/Diagnosen oder zur Risikoabschätzung einer Erkrankung basierend auf der Prävalenz in der Familienanamnese oder bei bekannten Biomarkern verwendet werden.\r\n\r\nEs kann notwendig sein, jedes Familienmitglied spezifisch zu bezeichnen und nicht nur durch das Verhältnis zum Patienten. Zum Beispiel, während es nur eine Großmutter mütterlicherseits geben wird, kann es mütterlicherseits viele Cousinen geben. Dies kann erforderlich sein, um sicherzustellen, dass eine Stammbaumübersicht korrekt ist. Es wird auch genaue Änderungen an der Aufzeichnung für jedes einzelne ausgewählte Familienmitglied ermöglichen. In einem vertraulichen, nicht zur Weiterleitung bestimmten Datensatz, ist die Erfassung der Verwandten mit realen Namen aus Gründen der Übersichtlichkeit vorzuziehen. Wenn der Datensatz oder ein Teil des Datensatzes geteilt werden soll, kann die Identifikation des Familienmitglieds durch ein eindeutiges Zeichen oder einen Alias sinnvoller sein.",
+          "misuse" : "Nicht zur Repräsentation von Informationen über das relative oder absolute Risiko einer Erkrankung aufgrund der Familienanamnese zu entwickeln. Verwenden Sie für diesen Zweck spezifische Archetypen EVALUATION.health_risk, einschließlich CLUSTER.Familäre Prävalenz für die Details über den betroffenen Anteil der Familienmitglieder.\r\n\r\nNicht zur Repräsentation der Rückverfolgbarkeit von Kontakten bei Infektionskrankheiten, die ein sofortiges Handeln erfordern. Verwenden Sie für diesen Zweck spezifische Archetypen.\r\n\r\nNicht zur Repräsentation eines Ausschlusses der Familienanamnese. Verwenden Sie für diesen Zweck den Archetypen EVALUATION.exclusion-family_history.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera information om förekomst av hälsorelaterade problem hos genetiska och icke-genetiska släktskap, både de i livet och de avlidna.\r\n\r\nOmfattningen av denna arketyp är medvetet öppen för att inkludera så många familjerelaterade problem som möjligt. Dessa innefattar dock specifikt kända hälsoproblem och diagnoser, identifiering av biologiska markörer, samt relevanta psykosociala och miljöfaktorer.",
+          "keywords" : [ "familj", "historia", "hälsa", "tillstånd", "hälsoproblem", "diagnos", "genetisk", "stamtavla", "genealogi", "familjeanamnes", "relativt", "ärftlig", "ärvt", "familjär", "ärftlighet" ],
+          "use" : "Används för att sammanfatta information om problem eller diagnoser hos familjemedlemmar. Denna information kan sedan användas för att identifiera ett aktuellt hälsoproblem, bedöma framtida risker eller tillstånd samt för att initiera förebyggande hälsoaktiviteter.\r\n\r\nFamiljeanamnes har enligt tradition endast fokuserat på genetiska faktorer eller biomarkörer som indikatorer för risk eller potentiell risk. Omfattningen av denna arketyp inkluderar däremot registrering av hälsoproblem eller diagnoser som både har ett ärftligt ursprung såväl som de som påverkats av den inhemska miljön, inklusive psykosociala eller miljömässiga faktorer. Exempelvis exponering för toxiner i hemmet, våld i nära relation, sexuella övergrepp, alkoholism och andra missbruk.\r\n\r\nIcke-genetiska familjemedlemmar inkludera adopterade eller långvarigt placerade fosterbarn, de som är besläktade via äktenskap eller andra icke-närstående personer som deltar i familjens vardagliga liv.\r\n\r\nDenna arketyp har utformats för att inkludera: \r\n- en översikt i fritext. Syftet är att införliva information om familjeanamnes från befintliga system som icke-strukturerad text. och \r\n- fokus på relevant hälsoinformation om specifika familjemedlemmar, inklusive deras medicinska historia och biomarkörer. \r\n\r\nDenna arketyp kan användas i flera sammanhang. Exempelvis vid registrering av familjeanamnes inom ett kliniskt samråd; lista familjeanamnes; eller för att tillhandahålla en sammanfattande utskrivningsrapport. \r\n\r\nYtterligare detaljer om en familjemedlems specifika hälsoproblem, diagnos eller tidigare förfaranden kan fångas upp med arketyperna EVALUATION.problem_diagnosis eller ACTION.procedure, där ''Vårdobjekt'' specificeras som en familjemedlem. \r\n\r\nDenna arketyp kan även användas som grund för en familjeanamnes över hälsoproblem/diagnoser, eller för att bidra till estimerade risktillstånd baserat på förekomst i familjeanamnesen eller kända biomarkörer.\r\n\r\nIbland kan det vara nödvändigt att identifiera varje familjemedlem separat, och inte bara genom förhållandet till patienten, i syfte att säkerställa ett korrekt släktträd. Till exempel: även om det bara finns en mormor på moderns sida, kan det finnas flera kvinnliga kusiner på samma sida. Detta möjliggör även korrekta ändringar av journalen för varje identifierad familjemedlem. Om dokumentationen är sekretessbelagd, kan det vara användbart att registrera släktingens faktiska namn. Om dokumentationen, eller del av dokumentationen, ska delas vidare kan det vara lämpligare att identifiera familjemedlemmarna med ett alias.",
+          "misuse" : "Ska inte användas för utvärdering av relativ eller absolut risk för att utveckla ett tillstånd baserat på familjeanamnes. Använd i stället EVALUATION.health_risk-arketypen, inklusive CLUSTER.family_prevalence för information om det berörda förhållandet mellan familjemedlemmarna.\r\n\r\nSka inte användas för kontaktspårning av infektionssjukdomar som kräver omedelbar åtgärd. Använd specifika arketyper för detta ändamål.\r\n\r\nSka inte användas för att uteslutande registrera familjeanamnes. Använd i stället arketypen EVALUATION.exclusion-family_history för detta ändamål.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For registrering av informasjon om forekomst av helserelaterte forhold hos både levende og døde, genetiske og ikke-genetiske familiemedlemmer.\r\n\r\nArketypens avgrensninger er med vilje gjort utydelige, for å omfatte et bredest mulig spekter av problemer som kan opptre innenfor familier. Arketypen omfatter kjente problemer eller diagnoser, identifiserte biologiske markører, samt alle relevante psykososiale faktorer og miljøfaktorer.",
+          "keywords" : [ "familie", "anamnese", "helse", "tilstand", "problem", "diagnose", "genetisk", "slektstre", "genealogi", "familieanamnese", "slektning", "arvelighet", "biologisk", "familietre", "hereditet", "ikke-genetisk", "ikke-biologisk", "familiær", "genetikk", "arvelig", "hereditær", "far", "mor", "foreldre" ],
+          "use" : "Brukes for å registrere et sammendrag av helserelaterte forhold, problemer eller diagnoser hos familiemedlemmer. Informasjonen kan bidra til identifisering av et eksisterende helseproblem, et grunnlag for å vurdere individets fremtidige risiko for familiære sykdommer eller for å iverksette forebyggende helsearbeid.\r\n\r\nTradisjonelt har familieanamnese fokusert på genetiske faktorer eller biomarkører som indikatorer for risiko eller potensiell risiko. Denne arketypen omfatter registrering av informasjon både om arvelige problemer eller diagnoser, og de som ikke er arvelige. Dette kan gjelde påvirkninger i familiesituasjonen, psykososiale eller miljøfaktorer. Eksempler kan være eksponering for toksiner i hjemmet, vold i nære relasjoner, seksuelle overgrep, alkoholisme eller andre avhengigheter.\r\n\r\nIkke-genetiske familiemedlemmer kan være adoptivbarn eller langtidsplasserte fosterbarn, ektefeller eller andre personer som deltar i familiehverdagen og har innflytelse på familien.\r\n\r\nArketypen inneholder:\r\n- En fritekstoversikt. Dette tillater at detaljer om familieanamnesen kan importeres fra eksisterende systemer som en ustrukturert tekst.\r\n- En detaljert del, som fokuserer på relevant helseinformasjon om spesifikke familiemedlemmer, deres medisinske anamnese og biomarkører.\r\n\r\nArketypen kan brukes i mange sammenhenger, for eksempel registrering av familieanamnese i en klinisk konsultasjon, i en persistent oversikt over familieanamnese eller som del av en epikrise.\r\n\r\nYtterligere detaljer om et familiemedlems spesifikke problemer, diagnoser eller gjennomgåtte prosedyrer kan registreres ved å bruke EVALUATION.problem_diagnosis- eller ACTION.procedure-arketypen og spesifisere \"Subject of Care\" til familiemedlemmet, i stedet for individet som journalen omhandler.\r\n\r\nArketypen kan brukes som basis for et slektstre over helseproblemer og diagnoser, eller for å understøtte risikoberegninger basert på forekomst i familieanamnesen eller kjente biomarkører.\r\n\r\nDet kan være nødvendig å identifisere hvert enkelt familiemedlem spesifikt og ikke bare relasjonen til pasienten. For eksempel: Det finnes bare én mormor, men det er mulig at det finnes flere kvinnelige søskenbarn på morssiden. En slik registrering kan være nødvendig for å sikre at et slektstre blir nøyaktig, og kan også muliggjøre nøyaktige korreksjoner eller tillegg til journalen for hvert identifiserte familiemedlem.",
+          "misuse" : "Skal ikke benyttes for å registrere informasjon om relativ eller absolutt risiko for å utvikle en tilstand ut fra en familieanamnese, bruk EVALUATION.health_risk-arketypen med CLUSTER.family_prevalence-arketypen for å registrere detaljer om andelen familiemedlemmer som er rammet.\r\n\r\nBrukes ikke for smittesporing av sykdommer som krever øyeblikkelig handling. Bruk spesifikke arketyper for dette formålet.\r\n\r\nBrukes ikke for å registrere fravær av problemer og eller diagnoser i familieanamnesen, bruk EVALUATION.exclusion-family_history-arketypen.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registrar informações sobre a ocorrência de problemas significativos relacionados com a saúde de membros da família (relacionados ou não relacionados) tanto vivos quanto falecidos.\r\n\r\nO âmbito de aplicação deste arquétipo é deliberadamente mantido amplo para incluir a maior gama de problemas ou questões que possam ser encontrados dentro das famílias. Ele inclui problemas e diagnósticos, marcadores biológicos identificados, além de todos os fatores psicossociais e ambientais relevantes conhecidos.",
+          "keywords" : [ "família", "história", "estória", "saúde", "condição", "problema", "diagnóstico", "genético", "pedigree", "genealogia", "história familiar", "parente", "hereditário" ],
+          "use" : "Use para gravar um resumo das informações sobre problemas ou diagnósticos encontrados nos membros da família. Esta informação pode ser utilizada para contribuir numa avaliação de risco de condições potencialmente herdadas ou início de atividades preventivas de saúde para o indivíduo.\r\n\r\nTradicionalmente, o escopo da história da família tem sido focado em fatores genéticos ou biomarcadores como indicadores de risco ou risco potencial. No entanto, o escopo deste arquétipo inclui explicitamente o registro da informação sobre problemas ou diagnósticos que possam ser influenciados pela exposição familiar de membros não aparentados a fatores psicossociais ou ambientais. Exemplos que são relevantes para os membros não aparentados da família incluem a exposição a toxinas no ambiente familiar, violência doméstica, abuso sexual, alcoolismo e outros vícios.\r\n\r\nMembros da família não aparentados podem incluir crianças adotadas, os relacionados pelo casamento, ou outros indivíduos não aparentados que participam na vida regular e influência da família.\r\n\r\nEste arquétipo foi projetado para incluir:\r\n- Uma visão narrativa como texto livre. Isso permitirá que detalhes de história da família sejam incorporados como texto não-estruturado; e\r\n- Uma exposição detalhada com foco em detalhes de saúde relevantes sobre os membros da família específicos, incluindo a sua história clínica e marcadores biológicos.\r\n\r\nEste arquétipo pode ser usado em muitos contextos. Por exemplo, a gravação da história da família dentro de uma consulta clínica; preencher uma lista de História da Família; ou para fornecer uma declaração resumida num sumário de alta.\r\n\r\nDetalhes adicionais sobre o problema ou diagnóstico específico de um membro da família podem ser capturados usando o arquétipo EVALUATION.problem_diagnosis e especificando o 'Sujeito do Cuidado' como o membro da família, em vez do sujeito do registro de saúde.\r\n\r\nEste arquétipo pode ser usado como a base para uma genealogia dos problemas / ou diagnósticos de saúde de uma família para permitir as estimativas de risco de uma patologia com base em prevalência na história da família ou marcadores biológicos conhecidos.\r\n\r\nPode ser necessário identificar cada membro da família especificamente e não apenas pela relação com o paciente. Por exemplo, só há uma avó materna mas podem haver muitas primas maternas. Isso pode ser necessário para assegurar que um gráfico de linhagem seja preciso. Ele também permite alterações no registro para cada membro da família identificado. Se o registro for privado e não puder ser compartilhado, pode ser preferível gravar o nome real do parente. Se o registro, ou parte do registro, puder ser compartilhado, pode ser mais apropriado que o membro da família seja identificado por um rótulo exclusivo ou alias.\r\n",
+          "misuse" : "Não deve ser usado para registrar informações sobre o risco relativo ou absoluto de desenvolver uma condição devido à história familiar - usar o arquétipo EVALUATION.health_risk , incluindo o CLUSTER.family_prevalence para detalhes sobre a relação dos membros da família afetada.\r\n\r\nNão deve ser usado para busca de contactantes de doenças infecciosas que requeiram ações imediatas.\r\n\r\nNão deve ser usado para registrar uma exclusão de História Familiar - utilizar o arquétipo EVALUATION.exclusion-family_history para esta finalidade.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "el" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "el"
+          },
+          "purpose" : "*To record information about the occurrence of significant health-related problems in genetic and non-genetic family members - both alive and deceased. \r\n\r\nThe intended scope of this archetype is deliberately kept loose to include the broadest range of problems or issues that might be found within families. It specifically includes known problems and diagnoses, identified biological markers, plus any relevant psychosocial factors and environmental factors.(en)",
+          "keywords" : [ "*family(en)", "*history(en)", "*health(en)", "*condition(en)", "*problem(en)", "*diagnosis(en)", "*genetic(en)", "*pedigree(en)", "*genealogy(en)", "*family history(en)", "*relative(en)", "*hereditary(en)", "*inherited(en)", "*familial(en)", "*heredity(en)" ],
+          "use" : "*Use to record a summary of information about problems or diagnoses found in family members. This information may be used to contribute to the identification of a current health problem, assessment of future risk from familial problems or conditions, or to initiate preventive health activities.\r\n\r\nTraditionally the scope of family history has been focused on genetic factors or biomarkers as indicators of risk or potential risk. The scope of this archetype includes both recording of problems or diagnoses that have an inheritable origin as well as those that are not directly inheritable but influenced by the domestic setting, including psychosocial or environmental factors. Examples include exposure to toxins in the family environment, domestic violence, sexual abuse, alcoholism and other addictions.\r\n\r\nNon-genetic family members can include adopted or long term fostered children, those related by marriage, or other unrelated individuals who participate in the regular life and influence of the family.\r\n\r\nThis archetype has been designed to include:\r\n- a narrative overview as free text. This will allow family history details from existing systems to be incorporated as non-structured text; and\r\n- a detailed area focusing on relevant health details about specific family members, including their medical history and biomarkers.\r\n\r\nThis archetype can be used within many contexts. For example, recording a family history entry within a clinical consultation; populating a Family History List; or to provide a summary statement within a Discharge Summary document.\r\n\r\nAdditional detail about a family member's specific problem, diagnosis or past procedures can be captured using the EVALUATION.problem_diagnosis or the ACTION.procedure archetype and specifying the 'Subject of Care' as the family member, rather than the subject of the health record. \r\n\r\nThis archetype can be used as the basis for a Family Pedigree chart of health problems/diagnoses or to support estimations of risk of a condition based on prevalence in the family history or known biomarkers.\r\n\r\nIt may be necessary to identify each family member specifically and not just by the relationship to the patient. For example, while there will be only one maternal grandmother, there may be many female maternal cousins. This may be required to ensure that a pedigree chart is accurate. It will also enable accurate amendments to the record for each identified family member. If the record is private and will not be shared, for reasons of clarity it may be preferable to record the relative's actual name. If the record, or part of the record, is to be shared, it may be more appropriate for the family member to be identified by a unique label or alias.(en)",
+          "misuse" : "*Not to be used to record information about the relative or absolute risk of developing a condition due to family history - use the EVALUATION.health_risk archetype, including the CLUSTER.family_prevalence for details about the affected ratio of family members.\r\n\r\nNot to be used for contact tracing for infectious diseases requiring immediate action. Use specific archetypes for this purpose.\r\n\r\nNot to be used to record an exclusion of Family History - use the EVALUATION.exclusion-family_history archetype for this purpose.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record information about the occurrence of significant health-related problems in genetic and non-genetic family members - both alive and deceased. \r\n\r\nThe intended scope of this archetype is deliberately kept loose to include the broadest range of problems or issues that might be found within families. It specifically includes known problems and diagnoses, identified biological markers, plus any relevant psychosocial factors and environmental factors.",
+          "keywords" : [ "family", "history", "health", "condition", "problem", "diagnosis", "genetic", "pedigree", "genealogy", "family history", "relative", "hereditary", "inherited", "familial", "heredity" ],
+          "use" : "Use to record a summary of information about problems or diagnoses found in family members. This information may be used to contribute to the identification of a current health problem, assessment of future risk from familial problems or conditions, or to initiate preventive health activities.\r\n\r\nTraditionally the scope of family history has been focused on genetic factors or biomarkers as indicators of risk or potential risk. The scope of this archetype includes both recording of problems or diagnoses that have an inheritable origin as well as those that are not directly inheritable but influenced by the domestic setting, including psychosocial or environmental factors. Examples include exposure to toxins in the family environment, domestic violence, sexual abuse, alcoholism and other addictions.\r\n\r\nNon-genetic family members can include adopted or long term fostered children, those related by marriage, or other unrelated individuals who participate in the regular life and influence of the family.\r\n\r\nThis archetype has been designed to include:\r\n- a narrative overview as free text. This will allow family history details from existing systems to be incorporated as non-structured text; and\r\n- a detailed area focusing on relevant health details about specific family members, including their medical history and biomarkers.\r\n\r\nThis archetype can be used within many contexts. For example, recording a family history entry within a clinical consultation; populating a Family History List; or to provide a summary statement within a Discharge Summary document.\r\n\r\nAdditional detail about a family member's specific problem, diagnosis or past procedures can be captured using the EVALUATION.problem_diagnosis or the ACTION.procedure archetype and specifying the 'Subject of Care' as the family member, rather than the subject of the health record. \r\n\r\nThis archetype can be used as the basis for a Family Pedigree chart of health problems/diagnoses or to support estimations of risk of a condition based on prevalence in the family history or known biomarkers.\r\n\r\nIt may be necessary to identify each family member specifically and not just by the relationship to the patient. For example, while there will be only one maternal grandmother, there may be many female maternal cousins. This may be required to ensure that a pedigree chart is accurate. It will also enable accurate amendments to the record for each identified family member. If the record is private and will not be shared, for reasons of clarity it may be preferable to record the relative's actual name. If the record, or part of the record, is to be shared, it may be more appropriate for the family member to be identified by a unique label or alias.",
+          "misuse" : "Not to be used to record information about the relative or absolute risk of developing a condition due to family history - use the EVALUATION.health_risk archetype, including the CLUSTER.family_prevalence for details about the affected ratio of family members.\r\n\r\nNot to be used for contact tracing for infectious diseases requiring immediate action. Use specific archetypes for this purpose.\r\n\r\nNot to be used to record an exclusion of Family History - use the EVALUATION.exclusion-family_history archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "*To record information about the occurrence of significant health-related problems in genetic and non-genetic family members - both alive and deceased. \r\n\r\nThe intended scope of this archetype is deliberately kept loose to include the broadest range of problems or issues that might be found within families. It specifically includes known problems and diagnoses, identified biological markers, plus any relevant psychosocial factors and environmental factors.(en)",
+          "keywords" : [ "famille", "histoire", "santé", "état", "problème", "diagnostic", "génétique", "pedigree", "généalogie", "histoire de famille", "relatif", "héréditaire", "hérité", "familial", "hérédité" ],
+          "use" : "*Use to record a summary of information about problems or diagnoses found in family members. This information may be used to contribute to the identification of a current health problem, assessment of future risk from familial problems or conditions, or to initiate preventive health activities.\r\n\r\nTraditionally the scope of family history has been focused on genetic factors or biomarkers as indicators of risk or potential risk. The scope of this archetype includes both recording of problems or diagnoses that have an inheritable origin as well as those that are not directly inheritable but influenced by the domestic setting, including psychosocial or environmental factors. Examples include exposure to toxins in the family environment, domestic violence, sexual abuse, alcoholism and other addictions.\r\n\r\nNon-genetic family members can include adopted or long term fostered children, those related by marriage, or other unrelated individuals who participate in the regular life and influence of the family.\r\n\r\nThis archetype has been designed to include:\r\n- a narrative overview as free text. This will allow family history details from existing systems to be incorporated as non-structured text; and\r\n- a detailed area focusing on relevant health details about specific family members, including their medical history and biomarkers.\r\n\r\nThis archetype can be used within many contexts. For example, recording a family history entry within a clinical consultation; populating a Family History List; or to provide a summary statement within a Discharge Summary document.\r\n\r\nAdditional detail about a family member's specific problem, diagnosis or past procedures can be captured using the EVALUATION.problem_diagnosis or the ACTION.procedure archetype and specifying the 'Subject of Care' as the family member, rather than the subject of the health record. \r\n\r\nThis archetype can be used as the basis for a Family Pedigree chart of health problems/diagnoses or to support estimations of risk of a condition based on prevalence in the family history or known biomarkers.\r\n\r\nIt may be necessary to identify each family member specifically and not just by the relationship to the patient. For example, while there will be only one maternal grandmother, there may be many female maternal cousins. This may be required to ensure that a pedigree chart is accurate. It will also enable accurate amendments to the record for each identified family member. If the record is private and will not be shared, for reasons of clarity it may be preferable to record the relative's actual name. If the record, or part of the record, is to be shared, it may be more appropriate for the family member to be identified by a unique label or alias.(en)",
+          "misuse" : "*Not to be used to record information about the relative or absolute risk of developing a condition due to family history - use the EVALUATION.health_risk archetype, including the CLUSTER.family_prevalence for details about the affected ratio of family members.\r\n\r\nNot to be used for contact tracing for infectious diseases requiring immediate action. Use specific archetypes for this purpose.\r\n\r\nNot to be used to record an exclusion of Family History - use the EVALUATION.exclusion-family_history archetype for this purpose.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "旨在记录有关有遗传学血缘关系和无遗传学血缘关系的家族成员（包括在世者和已故者）重要健康问题的信息。\r\n\r\n本原始型有意保持宽松的预定适用范围，以包括家族之中可能存在的范围/种类最为广泛的问题。其中具体包括已知的问题和诊断，已明确/鉴定的生物标志物，以及任何相关的心理社会因素和环境因素。",
+          "keywords" : [ "家庭", "家族", "历史", "史", "健康", "疾病", "问题", "健康问题", "诊断", "遗传", "遗传性", "遗传学", "谱系", "系谱", "家谱", "家族史", "家族病史", "相对", "家族性", "亲属", "家属" ],
+          "use" : "用于记录关于那些在家族成员中所发现的问题或诊断的信息摘要。这些信息可用于帮助确定现有的健康问题，评估家族性问题或疾病所造成的未来风险，或者是启动预防性的健康/医疗活动。\r\n\r\n从传统上来说，家族史的适用范围一直侧重于那些作为风险或潜在风险指标的遗传因素或生物标志物。这种原始型的适用范围既包括记录具有遗传起源的问题或诊断，也包括那些不能直接遗传但受家庭环境影响的问题或诊断，包括社会心理因素或环境因素。相应的例子包括家族环境下的毒素暴露、家庭暴力、性虐待、酗酒和其他的成瘾问题。\r\n\r\n无遗传学血缘关系的家族成员可包括领养或长期抚养的儿童、因婚姻而相关的儿童，或者是其他参与家族正常生活和受到家族影响的无关个人。\r\n\r\n本原始型旨在包括：\r\n- 作为自由文本的叙述性概述。这样就使得能够将现有系统之中的家族历史详情作为非结构化文本而加以收纳；\r\n- 集中关注特定家族成员相关健康细节的详细方面，包括他们的病史和生物标志物。\r\n\r\n本原始型可用于许多的情况。例如，用于记录临床就诊/咨询记录当中的家族史条目，填写家族历史清单，或者是提供“出院摘要”文档之中的摘要式陈述。\r\n\r\n可以采用原始型EVALUATION.problem_diagnosis（评价类原始型“问题诊断”）或ACTION.procedure（行动类原始型“操作项目”）来记录关于家族成员特定问题、诊断或既往操作项目的其他细节，并将该家族成员指定为“照护服务对象”，而不是当前健康档案的记录对象。\r\n\r\n本原始型可用作健康问题/诊断家族谱系图的基础，或用于支持基于家族史或已知生物标志物方面的患病率来估算疾病风险。\r\n\r\n可能需要具体标识每个家族成员的身份，而不仅仅是利用其与患者的关系来标识。例如，虽然只有一位外祖母，但可能会同时有许多位女性姨表亲。这就可能要求确保谱系图表的准确性。这样还使得能够准确修改每位身份已明确的家族成员的记录。如果档案记录是私密的且不会进行共享，为了清楚起见，则可能最好记录亲属的实际姓名。如果要共享档案记录或其中的部分内容，则可以更适合利用唯一性的标签或别名来标识家族成员。",
+          "misuse" : "并非旨在用于记录关于因家族史而发生疾病的相对或绝对风险的信息 – 此时请采用原始型EVALUATION.health_risk（评价类原始型“健康风险”），包括采用原始型CLUSTER.family_prevalence（群簇类原始型“家族患病率”），来记录关于受影响家族成员比例的详情。\r\n\r\n并非旨在用于需要立即采取行动的传染病接触者追踪。对于此类目的，请采用专用的原始型。\r\n\r\n并非旨在用于记录家族历史排除项对于此类目的，请采用原始型EVALUATION.exclusion-family_history（评价类原始型“家族历史排除项”）。",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.family_history.v2",
     "differential" : true,
